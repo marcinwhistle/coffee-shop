@@ -1,0 +1,143 @@
+/* HERO */
+
+@import "global";
+
+.body {
+  margin: 0;
+  background: #fff;
+  color: #3d3d3d;
+  font-size: $font-size;
+  font-family: $font-text;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url("/images/background-small.png");
+  color: $white;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.logo {
+  font-size: $font-size * 2;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  line-height: 1;
+}
+
+.logo span {
+  font-size: $font-size;
+}
+
+.page-title {
+  font-size: $font-size * 5;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: $brown;
+}
+
+.page-title span {
+  left: 60%;
+}
+
+.page-title::after {
+  position: absolute;
+  content: '';
+  bottom: -24px;
+  left: 50%;
+  width: 100px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: $brown;
+}
+
+.button p, i {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: $font-size * 2;
+}
+
+.button p {
+  padding: 20px;
+}
+
+.menu {
+  position: absolute;
+  top: 15px;
+  right: 30vh;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  display: inline;
+  margin-left: 10px;
+}
+
+.menu ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.about {
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url("/images/about-us.jpg");
+  color: $white;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  font-size: $font-size * 3;
+  color: $brown;
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+.header::after {
+  position: absolute;
+  content: '';
+  bottom: -24px;
+  left: 50%;
+  width: 300px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: $brown;
+}
+
+.products {
+  height: 600px;
+}
+
+.description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: $font-size * 2;
+}
+
+.footer {
+  text-align: center;
+}
