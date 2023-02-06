@@ -13,127 +13,106 @@
     <title>Sklep z kawą</title>
 </head>
 <body>
-
-<div class="page-home">
     <div class="hero">
-        <div class="logo">
-            <p>EL TIGRE<br>
-            <span>VENEZUELA COFFEE BEANS</span></p>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="http://">HOME</a>
-                </li>
-                <li><a href="" class="link">PRODUCTS</a>
-                </li>
-                <li><a href="" class="link">CONTACT</a>
-                </li>
-            </ul>
-        </div>
+            <div class="nav-container">
+                <div class="logo">
+                    <p>EL TIGRE<br>
+                    <span>VENEZUELA COFFEE BEANS</span></p>
+                </div>
+                <div class="menu">
+                    <a href="#home">HOME</a>
+                    <a href="#contact">CONTACT</a>
+                    <a href="#products">PRODUCTS</a>
+                </div>
+            </div>
         <div class="page-title">
-             <p>HOME OF <br> <span>ORIGINAL TASTES</span></p>
+            <p>HOME OF <br> <span>ORIGINAL TASTES</span></p>
         </div>
         <div class="button">
             <p>DISCOVER</p>
             <i class="icon icon-arrow-down"></i>
         </div>
     </div>
-    <div class="products">
-        <div class="container">
-            <div class="header">
-                <span>PRODUCTS</span>
+
+    <div id="pages">
+        <section id="home" class="homepage-container">
+            <div class="home">
+                <div class="product">
+                    <div class="container">
+                        <div class="header">
+                            <span>PRODUCTS</span>
+                        </div>
+                        <div class="product-container"></div>
+                        </div>
+                </div>
+            </div>
+            <div class="about">
+                <div class="header">
+                    <span>ABOUT US</span>
+                    <span class="line"></span>
+                </div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus fermentum molestie. Morbi diam purus, vestibulum vitae dignissim vel, suscipit eu ex. <br> Donec sapien mi, aliquam id ex at, faucibus consequat ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br><p class="signature">Lorem ipsum</p>
+                </div>
+            </div>
+            <div class="footer">
+                © 2021 EL TIGRE inc.
+            </div>
+        </section>
+        <section id="contact" class="contact-container">
+                <div class="container">
+                    <div class="header">
+                        <span>CONTACT US</span>
+                    </div>
+                        <form class="form">
+                            <p>NAME</p>
+                            <input type="text">
+                            <p>TITLE</p>
+                            <input type="text">
+                            <p>MESSAGE</p>
+                            <textarea cols="25" rows="2"></textarea>
+                            <div>
+                                <button type="submit">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                <div class="footer">
+                    © 2021 EL TIGRE inc.
+                </div>
+        </section>
+        <section id="products" class="products-container">
+            <div class="products">
+                <div class="product">
+                    <div class="container">
+                        <div class="header">
+                            <span>PRODUCTS</span>
+                            <div class="product-container">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script id="template-product-list" type="text/x-handlebars-template">
+        <div class="product-container p-5">
+            <div class="row">
+                <div class="col">
+                    <div class="product__name">{{id}} {{name}}</div>
+                    <div class="product__line"></div>
+                    <div class="product__description">{{description}}</div>
+                    <div class="product__parameters">
+                        <div><span class="product__specification">ROASTING:</span> <span class="product__rate">{{roasting}}</span></div>
+                        <div><span class="product__specification">INTENSITY:</span> <span class="product__rate">{{intensity}}</span></div>
+                    </div>
+                </div>
+            <div class="col">
+                <div ><img class="product__image" src="{{image}}"</div>
             </div>
         </div>
-    </div>
-    <div class="about">
-        <div class="header">
-            <span>ABOUT US</span>
-        </div>
-        <div class="description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Cras cursus fermentum molestie. <br> Morbi diam purus, vestibulum vitae dignissim vel, suscipit eu ex. <br> Donec sapien mi, aliquam id ex at, faucibus consequat ante. <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </div>
-    <div class="footer">
-        <span>© 2021 EL TIGRE inc. </span>
-    </div>
-</div>
-
-<div class="page-contact">
-    <div class="hero">
-        <div class="logo">
-            <p>EL TIGRE<br>
-            <span>VENEZUELA COFFEE BEANS</span></p>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="http://">HOME</a>
-                </li>
-                <li><a href="" class="link">PRODUCTS</a>
-                </li>
-                <li><a href="" class="link">CONTACT</a>
-                </li>
-            </ul>
-        </div>
-        <div class="page-title">
-             <p>HOME OF <br> <span>ORIGINAL TASTES</span></p>
-        </div>
-        <div class="button">
-            <p>DISCOVER</p>
-            <i class="icon icon-arrow-down"></i>
-        </div>
-    </div>
-    <div class="contact">
-        <div class="header">
-            <span>CONTACT US</span>
-        </div>
-    </div>
-    <form>
-        <p>Name</p>
-        <input type="text">
-        <p>Title</p>
-        <input type="text">
-        <p>Message</p>
-        <input type="textarea">
-        <input type="submit">
-    </form>
-    <div class="footer">
-        <span>© 2021 EL TIGRE inc. </span>
-    </div>
-</div>
-
-<div class="page-products">
-    <div class="hero">
-        <div class="logo">
-            <p>EL TIGRE<br>
-            <span>VENEZUELA COFFEE BEANS</span></p>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="http://">HOME</a>
-                </li>
-                <li><a href="" class="link">PRODUCTS</a>
-                </li>
-                <li><a href="" class="link">CONTACT</a>
-                </li>
-            </ul>
-        </div>
-        <div class="page-title">
-             <p>HOME OF <br> <span>ORIGINAL TASTES</span></p>
-        </div>
-        <div class="button">
-            <p>DISCOVER</p>
-            <i class="icon icon-arrow-down"></i>
-        </div>
-    </div>
-    <div class="products">
-        <div class="container">
-            <div class="header">
-                <span>PRODUCTS</span>
-            </div>
-        </div>
-    </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+    </script>
 <script src="js/script.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
 </body>
 </html>

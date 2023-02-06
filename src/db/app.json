@@ -1,28 +1,28 @@
 {
     "products":[
     {
-    "id": "1",
+    "id": "01.",
     "name": "LA LAGARTIJA",
-    "descriiption": "Nulla quis tincidunt ex. Proin faucibus lacus et nibh blandit, ac interdum quam laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;",
+    "description": "Nulla quis tincidunt ex. Proin faucibus lacus et nibh blandit, ac interdum quam laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;",
     "roasting": "5/10",
     "intensity": "6/10",
-    "image": ["<img class=\"active\" src=\"images/coffee-1.png\">"]
+    "image": ["images/coffee-1.png"]
 },
 {
-    "id": "2",
+    "id": "02.",
     "name": "EL TIGRE",
-    "descriiption": "Nulla quis tincidunt ex. Proin faucibus lacus et nibh blandit, ac interdum quam laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;",
+    "description": "Nulla quis tincidunt ex. Proin faucibus lacus et nibh blandit, ac interdum quam laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;",
     "roasting": "8/10",
     "intensity": "9/10",
-    "image": ["<img class=\"active\" src=\"images/coffee-2.png\">"]
+    "image": ["images/coffee-2.png"]
 },
 {
-    "id": "3",
+    "id": "03.",
     "name": "LA CUCARACHA",
-    "descriiption": "Nulla quis tincidunt ex. Proin faucibus lacus et nibh blandit, ac interdum quam laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;",
+    "description": "Nulla quis tincidunt ex. Proin faucibus lacus et nibh blandit, ac interdum quam laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;",
     "roasting": "3/10",
     "intensity": "7/10",
-    "image": ["<img class=\"active\" src=\"images/coffee-3.png\">"]
+    "image": ["images/coffee-3.png"]
 }
 ]
 }

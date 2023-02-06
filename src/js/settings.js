@@ -1,5 +1,20 @@
-export const select = {};
-export const classNames = {};
+export const select = {
+  templateOf: {
+    productList: '#template-product-list',
+  },
+  containerOf: {
+    pages: '#pages',
+    productList: '.product-container',
+  },
+  nav: {
+    links: '.menu a',
+  },
+};
+export const classNames = {
+  pages: {
+    active: 'active',
+  },
+};
 export const settings = {
   db: {
     url:
@@ -9,4 +24,8 @@ export const settings = {
     products: 'products',
   },
 };
-export const templates = {};
+export const templates = {
+  productList: Handlebars.compile(
+    document.querySelector(select.templateOf.productList).innerHTML
+  ),
+};
