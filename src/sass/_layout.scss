@@ -105,7 +105,7 @@
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  min-height: 600px;
+  min-height: 500px;
   position: relative;
 }
 
@@ -124,7 +124,7 @@
   border-bottom: 5px solid;
   color: $brown;
   margin: 0 auto;
-  width: 400px;
+  width: 150px;
 }
 
 .description {
@@ -139,7 +139,8 @@
 
 .footer {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 50px;
+  height: 200px;
 }
 
 .form {
@@ -220,6 +221,88 @@
   }
 }
 
-.col-flex {
-  display: flex;
+@media (max-width: 425px) {
+  .product {
+  &__image {
+    height: 250px;
+    width: 350px;
+  }
+  &__description {
+    font-size: $font-size * 1;
+    margin-left: 150px;
+
+  }
+  }
+  .description {
+    font-size: $font-size * 1.5;
+    margin: 10px;
+    max-width: 600px;
+  }
+
+  .signature {
+    text-align: right;
+  }
+
+  .page-title {
+    font-size: $font-size * 3;
+
+  }
+  .page-title::after {
+    display: block;
+    content: '';
+    margin-top: 10px;
+    border-bottom: 5px solid;
+    color: $brown;
+    margin: 0 auto;
+    width: 200px;
+  }
+}
+
+@media (max-width: 425px) {
+  .product {
+    &__image {
+      height: 200px;
+      width: 300px;
+    }
+
+    &__prize {
+      display: none;
+    }
+  }
+  .page-title span {
+    position: relative;
+    left: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .hero {
+    height: 30vh;
+    min-height: 400px;
+  }
+  .product {
+    &__image {
+      height: 150px;
+      width: 260px;
+    }
+    &__description {
+      font-size: $font-size * 1.5;
+      margin: 0;
+    }
+  }
+
+  .page-title span {
+    position: relative;
+    left: 30px;
+  }
+
+  .logo {
+    font-size: $font-size * 1.5;
+    line-height: 1;
+  }
+
+  .logo span {
+    font-size: $font-size * 0.5;
+}
 }

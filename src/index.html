@@ -44,15 +44,13 @@
     </div>
 
     <div id="pages">
-      <section id="home" class="homepage-container">
-        <div class="home">
+      <section id="home">
           <div class="container">
             <div class="header">
               <span>PRODUCTS</span>
             </div>
             <div class="product-container">
             </div>
-          </div>
         </div>
         <div class="about">
           <div class="header">
@@ -72,7 +70,7 @@
         <div class="footer">© 2021 EL TIGRE inc.
         </div>
       </section>
-      <section id="contact" class="contact-container">
+      <section id="contact">
         <div class="container">
           <div class="header">
             <span>CONTACT US</span>
@@ -97,7 +95,7 @@
                     <div class="container">
                         <div class="header">
                             <span>PRODUCTS</span>
-                            <div class="product-container">
+                            <div class="product-container2">
                             </div>
                         </div>
                     </div>
@@ -106,7 +104,6 @@
         </section>
     </div>
     <script id="template-product-list" type="text/x-handlebars-template">
-        <div class="container-fluid">
         <div class="row">
               <div class="col-lg-6 p-5 {{#if directions}}order-lg-last{{/if}}">
                   <div class="product__name">{{id}} {{name}}</div>
@@ -124,7 +121,7 @@
               <div class="col-lg-6 p-5">
                   <div ><img class="product__image" src="{{image}}"/></div>
               </div>
-            </div>
+
     </script>
     <script src="js/script.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
