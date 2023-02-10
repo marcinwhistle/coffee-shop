@@ -124,7 +124,7 @@
   border-bottom: 5px solid;
   color: $brown;
   margin: 0 auto;
-  width: 150px;
+  width: 200px;
 }
 
 .description {
@@ -167,9 +167,6 @@
   padding: 5px;
   width: 114px;
 }
-
-
-// .row display flex i wlasciwosc order jesli klasa left to inny order
 
 .product {
   &__name {
@@ -272,6 +269,17 @@
   .page-title span {
     position: relative;
     left: 50px;
+  }
+  .button p, .button i {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: $font-size * 1.5;
+  }
+
+  .button p {
+    padding: 5px;
   }
 }
 
