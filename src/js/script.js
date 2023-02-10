@@ -7,6 +7,7 @@ const app = {
 
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
+    thisApp.product = document.querySelector(select.containerOf.product);
 
     const idFromHash = window.location.hash.replace('#/', '');
     let pageMatchingHash = thisApp.pages[0].id;
@@ -35,6 +36,12 @@ const app = {
 
   activatePage: function (pageId) {
     const thisApp = this;
+
+    // if (pageId === 'home') {
+    //   thisApp.product.classList.add(classNames.pages.active);
+    // }
+
+    //if sekcja home bedzie aktywna
 
     for (let page of thisApp.pages) {
       page.classList.toggle(classNames.pages.active, page.id == pageId);

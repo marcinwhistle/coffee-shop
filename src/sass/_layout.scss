@@ -105,7 +105,7 @@
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  height: 40vh;
+  min-height: 600px;
   position: relative;
 }
 
@@ -167,22 +167,15 @@
   width: 114px;
 }
 
-.contact-container .footer {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  color: $brown;
-  font-size: $font-size * 0.9;
-}
+
+// .row display flex i wlasciwosc order jesli klasa left to inny order
 
 .product {
-  margin: 30px;
-
   &__name {
-    font-size: $font-size * 2;
+    font-size: $font-size * 3;
     font-weight: 700;
-    padding: 10px;
   }
+
   &__name::after {
     display: block;
     content: '';
@@ -193,16 +186,20 @@
     width: 100px;
   }
 
-  &__specification {
-    font-weight: 700;
-  }
-  &__specification {
-    font-weight: 700;
+  &__description {
+    font-size: $font-size * 1.5;
+    margin-left: 150px;
+
   }
 
-  &__description {
-    padding-left: 150px;
-    width: 450px;
+  &__parameters {
+    font-size: $font-size*1.5;
+    margin-top: 20px;
+
+  }
+
+  &__specification {
+    font-weight: 700;
   }
 
   &__rate {
@@ -210,13 +207,19 @@
     font-weight: 700;
   }
 
-  &__parameters {
-    padding-top: 40px;
-  }
-
   &__image {
-    height: 250px;
-    width: 350px;
+    height: 350px;
+    width: 450px;
     box-shadow: 10px 10px 5px #ccc;
   }
+
+  &__prize {
+    height: 150px;
+    width: 180px;
+    margin-left: 180px;
+  }
+}
+
+.col-flex {
+  display: flex;
 }
