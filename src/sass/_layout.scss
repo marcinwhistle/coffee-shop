@@ -139,8 +139,8 @@
 
 .footer {
   text-align: center;
-  margin-top: 50px;
-  height: 200px;
+  margin-top: 30px;
+  height: 60px;
 }
 
 .form {
@@ -318,5 +318,16 @@
 
   .logo span {
     font-size: $font-size * 0.5;
+  }
+}
+
+@media (max-width:320px){
+  .col-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .description {
+    text-align: center;
   }
 }
