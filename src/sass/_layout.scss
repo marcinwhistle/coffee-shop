@@ -87,6 +87,10 @@
   width: 400px;
 }
 
+.col-flex{
+  display: flex;
+  justify-content: space-between;
+}
 .button p, .button i {
   position: absolute;
   bottom: 0;
@@ -97,6 +101,11 @@
 
 .button p {
   padding: 20px;
+}
+
+.col-img {
+  display: flex;
+  justify-content: center;
 }
 
 .about {
@@ -214,21 +223,55 @@
   &__prize {
     height: 150px;
     width: 180px;
-    margin-left: 180px;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px){
+  .description {
+    margin: 0 20px;
+    text-align: center;
+  }
   .product {
     &__image {
       height: 250px;
       width: 350px;
     }
 
+    &__prize {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+
+  .page-title span {
+    position: relative;
+    left: 50px;
+  }
+
+  .button p, .button i {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: $font-size * 1.5;
+  }
+
+  .button p {
+    padding: 5px;
+  }
+
+  .description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .product {
     &__description {
       font-size: $font-size * 1;
       margin-left: 150px;
-
     }
   }
 
@@ -258,39 +301,6 @@
   }
 }
 
-@media (max-width: 500px) {
-  .product {
-    &__image {
-      height: 200px;
-      width: 300px;
-    }
-
-    &__prize {
-      display: none;
-    }
-  }
-
-  .page-title span {
-    position: relative;
-    left: 50px;
-  }
-
-  .button p, .button i {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: $font-size * 1.5;
-  }
-
-  .button p {
-    padding: 5px;
-  }
-
-  .description {
-    text-align: center;
-  }
-}
 
 @media (max-width: 375px) {
   .hero {
@@ -322,20 +332,5 @@
 
   .logo span {
     font-size: $font-size * 0.5;
-  }
-
-  .description {
-    text-align: center;
-  }
-}
-
-@media (max-width:320px){
-  .col-img {
-    display: flex;
-    justify-content: center;
-  }
-
-  .description {
-    text-align: center;
   }
 }
