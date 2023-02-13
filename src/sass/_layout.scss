@@ -258,7 +258,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .product {
     &__image {
       height: 200px;
@@ -285,6 +285,10 @@
 
   .button p {
     padding: 5px;
+  }
+
+  .description {
+    text-align: center;
   }
 }
 
@@ -318,6 +322,10 @@
 
   .logo span {
     font-size: $font-size * 0.5;
+  }
+
+  .description {
+    text-align: center;
   }
 }
 
