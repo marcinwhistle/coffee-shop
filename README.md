@@ -1,6 +1,6 @@
 # Coffe Shop
 Application for Coffe Shop written in Vanilla Javascript.
-> Live demo [https://react-waiter-app.lemarczini21.repl.co/.](https://project-pizzeria.lemarczini21.repl.co)
+> Live demo https://coffee-shop.lemarczini21.repl.co
 
 
 ## Technologies Used
