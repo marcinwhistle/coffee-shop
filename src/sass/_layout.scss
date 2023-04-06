@@ -91,6 +91,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .button p, .button i {
   position: absolute;
   bottom: 0;
@@ -231,6 +232,7 @@
     margin: 0 20px;
     text-align: center;
   }
+
   .product {
     &__image {
       height: 250px;
@@ -244,7 +246,6 @@
 }
 
 @media (max-width: 500px) {
-
   .page-title span {
     position: relative;
     left: 50px;
